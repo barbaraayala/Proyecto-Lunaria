@@ -1,0 +1,24 @@
+@use"../utilities/mixin";
+@use"../utilities/variables";
+@use"../base/tipografia";
+@use"../base/reset";
+
+.content-heder {
+
+    background-image: url(../img/fondos/fondo-hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Playfair", serif;
+    align-items: center;
+    width: 84rem;
+    height: 32rem;
+     background-position: center top; 
+
+}
+
+.hero{
+    padding: 2rem;
+    text-align:initial;
+    gap: 16px;
+}

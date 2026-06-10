@@ -1,0 +1,18 @@
+// base
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+//componets
+@use"./partials/componets/navBar";
+@use"./partials/componets/card";
+@use"./partials/componets/buttons";
+
+//layout
+@use "./partials/layout/index";
+@use "./partials/layout/category";
+@use "./partials/layout/contac";
+@use "./partials/layout/proyect";
+@use "./partials/layout/stories";
+
+//utilities
+@use"./partials/utilities/variables";

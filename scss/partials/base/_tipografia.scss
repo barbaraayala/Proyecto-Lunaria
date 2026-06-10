@@ -1,0 +1,50 @@
+@use "../utilities/variables";
+//titulo
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+//texto
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+a {
+    font-family: "Playfair", serif;
+    color: variables.$textclear;
+
+}
+
+
+.hero h1 {
+    font-family: "Playfair", serif;
+    size: 64px;
+    font-weight: bold;
+    color: variables.$textclear;
+
+}
+
+h1 {
+    font-family: "playfair", serif;
+    size: 48px;
+    font-weight: bold;
+    color: variables.$textclear;
+}
+
+h2 {
+
+    font-family: "playfair", serif;
+    size: 36px;
+    font-weight: 600;
+    color: variables.$textclear;
+
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    color: variables.$textclear;
+
+}
+
+// Style	Font	Size	Weight
+// H1 Hero	Playfair Display	64	Bold
+// H1	Playfair Display	48	Bold
+// H2	Playfair Display	36	SemiBold
+// Body	Poppins	18	Regular
+// Small	Poppins	14	Regular
+// Button	Poppins	16	Medium

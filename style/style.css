@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #F4F7FF;
+}
+
+main {
+  background-color: #0B1D3A;
+}
+
+a {
+  font-family: "Playfair", serif;
+  color: #F4F7FF;
+}
+
+.hero h1 {
+  font-family: "Playfair", serif;
+  size: 64px;
+  font-weight: bold;
+  color: #F4F7FF;
+}
+
+h1 {
+  font-family: "playfair", serif;
+  size: 48px;
+  font-weight: bold;
+  color: #F4F7FF;
+}
+
+h2 {
+  font-family: "playfair", serif;
+  size: 36px;
+  font-weight: 600;
+  color: #F4F7FF;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  color: #F4F7FF;
+}
+
+.content-heder .navbar .nav-link {
+  font-family: "Playfair", serif;
+  color: #F4F7FF;
+  size: 64px;
+  font-weight: bold;
+}
+.content-heder .navbar .nav-link:hover {
+  color: #FF9BD2;
+  text-decoration: underline solid 3px;
+  text-underline-offset: 10px;
+}
+
+.card-titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem;
+  gap: 16px;
+  text-align: center;
+  font-family: "Playfair", serif;
+  color: #F4F7FF;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+  gap: 16px;
+}
+.card-content .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40rem;
+  height: 16rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #142B52;
+}
+.card-content .card .card-img {
+  display: inline-block;
+  gap: 8px;
+}
+.card-content .card .card-body {
+  flex-direction: row;
+}
+
+.card-button {
+  display: flex;
+  padding: 9px;
+  border-radius: 20px;
+  background-color: #FF9BD2;
+}
+.card-button:hover {
+  background-color: #9F93FF;
+}
+
+.hero-button {
+  display: flex;
+  padding: 9px;
+  border-radius: 20px;
+  background-color: #7B6CF6;
+}
+.hero-button:hover {
+  background-color: #9F93FF;
+}
+
+.content-heder {
+  background-image: url(../img/fondos/fondo-hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Playfair", serif;
+  align-items: center;
+  width: 84rem;
+  height: 32rem;
+  background-position: center top;
+}
+
+.hero {
+  padding: 2rem;
+  text-align: initial;
+  gap: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

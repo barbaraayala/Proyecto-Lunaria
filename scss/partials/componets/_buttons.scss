@@ -1,0 +1,11 @@
+@use"../utilities/mixin";
+@use"../base/tipografia";
+@use"../utilities/variables";
+
+.card-button {
+    @include mixin.button(variables.$colorsecondary, variables.$hoverbutton)
+}
+
+.hero-button {
+    @include mixin.button(variables.$colorprimary, variables.$hoverbutton)
+}

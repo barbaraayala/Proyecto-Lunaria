@@ -1,0 +1,42 @@
+@use"../base/tipografia";
+@use"../utilities/mixin";
+@use"../utilities/variables";
+
+.card-titulo {
+    @include mixin.flex(row, space-evenly, center);
+  
+    text-align: center;
+    font-family: "Playfair", serif;
+    color: variables.$textclear;
+
+  
+}
+
+.card-content {
+    @include mixin.flex(row, space-around, center);
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 40rem;
+        height: 16rem;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: variables.$backgroundsecondary;
+
+        .card-img {
+            display: inline-block;
+            gap: 8px;
+
+        }
+
+        .card-body {
+            flex-direction: row;
+
+
+        }
+
+    }
+
+}

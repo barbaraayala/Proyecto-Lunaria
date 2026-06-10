@@ -1,0 +1,23 @@
+@mixin flex ($direction, $justify, $align) {
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    margin: 2rem;
+    gap: 16px;
+
+}
+
+@mixin button ($color-back, $color-hover) {
+
+    display: flex;
+    padding: 9px;
+    border-radius: 20px;
+    background-color:$color-back;
+
+
+    &:hover {
+        background-color: $color-hover;
+    }
+}
