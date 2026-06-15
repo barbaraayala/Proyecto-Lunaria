@@ -1,24 +1,37 @@
-@use"../utilities/mixin";
+@use "../utilities/mixin";
+@use"../utilities/extend";
+@use"../componets/navBar";
 @use"../utilities/variables";
 @use"../base/tipografia";
 @use"../base/reset";
 
-.content-heder {
+.background-home {
 
-    background-image: url(../img/fondos/fondo-hero.png);
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    background-image: url("../img/fondos/fondo-claro.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: "Playfair", serif;
-    align-items: center;
-    width: 84rem;
-    height: 32rem;
-     background-position: center top; 
+
+    .navbar .nav-link {
+        @extend %nav-global;
+    }
+
 
 }
 
-.hero{
+.hero {
+
+    @include mixin.flex(column, space-around, center);
+    width: 40rem;
+    height: 16rem;
     padding: 2rem;
-    text-align:initial;
+    text-align: center;
     gap: 16px;
+
+    .hero-button {
+        @include mixin.button(variables.$colorprimary, variables.$hoverbutton)
+    }
+
 }

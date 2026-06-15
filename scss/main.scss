@@ -5,7 +5,7 @@
 //componets
 @use"./partials/componets/navBar";
 @use"./partials/componets/card";
-@use"./partials/componets/buttons";
+
 
 //layout
 @use "./partials/layout/index";
@@ -16,3 +16,4 @@
 
 //utilities
 @use"./partials/utilities/variables";
+//@use "./partials/utilities/mixin";

@@ -1,17 +1,14 @@
 @use"../base/tipografia";
 @use"../utilities/variables";
+@use"../utilities/extend";
 
-.content-heder .navbar .nav-link {
-    font-family: "Playfair", serif;
-    color: variables.$textclear;
-    size: 64px;
-    font-weight: bold;
 
-    &:hover {
-        color: variables.$colorsecondary;
-        text-decoration: underline solid 3px;
-        text-underline-offset: 10px
+
+.nav-page {
+    background-color: variables.$backgroundsecondary;
+
+    .nav-enlase {
+        @extend %nav-global;
+        background-color: variables.$backgroundsecondary;
     }
-
-
 }
