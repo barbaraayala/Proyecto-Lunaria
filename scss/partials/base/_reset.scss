@@ -7,6 +7,12 @@ a{
     text-decoration: none;
 
 }
+li{
+    list-style: none;
+}
 main{
+    background-color: variables.$backgroundsecondary;
+}
+footer{
     background-color: variables.$backgroundsecondary;
 }

@@ -14,14 +14,16 @@
 
 .card-content {
     @include mixin.flex(row, space-around, center);
+    margin: 0 ;
+    padding: 4rem 0.5rem 4rem 0.5rem ;
 
     .card {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        
         width: 40rem;
         height: 20rem;
-        border: 2px solid black;
+        border: 2px solid variables.$colorsecondary;
         border-radius: 20px;
         background-color: variables.$backgroundsecondary;
 
@@ -48,4 +50,8 @@
 
     }
 
+}
+
+.conten-category{
+    @include mixin.flex(row, space-around, center);
 }

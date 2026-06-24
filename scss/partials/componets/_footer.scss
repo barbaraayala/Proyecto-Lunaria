@@ -1,0 +1,14 @@
+@use"../utilities/mixin";
+@use"../utilities/variables";
+
+.global-footer{
+
+@include mixin.flex( row, space-between, center);
+margin: 0;
+background: linear-gradient(to top, variables.$colorsecondary, variables.$backgroundsecondary);
+
+.enlases-footer{
+align-items: center
+    
+
+}}
