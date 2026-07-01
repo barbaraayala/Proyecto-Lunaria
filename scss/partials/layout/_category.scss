@@ -1,1 +1,9 @@
 @use"../componets/card";
+@use"../utilities/mixin";
+
+
+
+.conten-category{
+    @include mixin.flex(column, space-around, center);
+}
+

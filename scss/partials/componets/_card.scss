@@ -13,22 +13,34 @@
 }
 
 .card-content {
-    @include mixin.flex(row, space-around, center);
-    margin: 0 ;
-    padding: 4rem 0.5rem 4rem 0.5rem ;
+    @include mixin.flex(column, space-around, center);
+    margin: 0;
+    padding: 4rem 0.5rem 4rem 0.5rem;
 
     .card {
         display: flex;
         flex-direction: row;
-        
-        width: 40rem;
-        height: 20rem;
+
+        width: 100%; // En celular ocupa todo el ancho disponible
+        max-width: 90%; // Deja un pequeño margen a los lados para que no toque los bordes del teléfono
+        height: auto; // Altura fluida en móviles para que se adapte al contenido de texto
+        padding: 1.5rem; // Un padding un poco más pequeño, ideal para pantallas táctiles
+        text-align: center;
+        gap: 16px;
+        margin: 0 auto; // Centra el bloque .hero en la pantalla del celular
+        overflow: hidden; // Evita que el contenido se desborde del contenedor
+
+
+        // width: 40rem;
+        // height: 20rem;
         border: 2px solid variables.$colorsecondary;
         border-radius: 20px;
         background-color: variables.$backgroundsecondary;
 
         .card-img {
-            display: flex;
+            display: block;
+            width: 120px;
+            height: auto;
             border-radius: 20px;
             margin: 0.5rem;
 
@@ -37,12 +49,14 @@
         .card-body {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
 
             .card-button {
                 @include mixin.button(variables.$colorsecondary, variables.$hoverbutton);
-
-
+                width: 100%;
+            
             }
 
 
@@ -50,8 +64,4 @@
 
     }
 
-}
-
-.conten-category{
-    @include mixin.flex(row, space-around, center);
 }

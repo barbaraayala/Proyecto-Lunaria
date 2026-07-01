@@ -1,14 +1,40 @@
 @use"../utilities/mixin";
 @use"../utilities/variables";
 
-.global-footer{
-
-@include mixin.flex( row, space-between, center);
-margin: 0;
-background: linear-gradient(to top, variables.$colorsecondary, variables.$backgroundsecondary);
-
-.enlases-footer{
-align-items: center
+.global-footer {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-around;
     
 
-}}
+    background: linear-gradient(to top, variables.$colorsecondary, variables.$backgroundsecondary);
+
+
+    .enlases-footer {
+
+        .link-footer {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+        }
+    }
+
+    .redes-footer {
+
+        .iconos-footer {
+            display: flex;
+            flex-direction: row;
+            gap:10px;
+            padding-left: 0px;
+        }
+
+    }
+
+    .logo-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+}
