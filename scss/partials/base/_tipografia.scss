@@ -30,9 +30,15 @@ h2 {
 
     font-family: "playfair", serif;
     size: 36px;
-    font-weight: 600;
+    font-weight: semibold;
     color: variables.$textclear;
 
+}
+h3{
+    font-family: "playfair", serif;
+    size: 36px;
+    font-weight: semibold;
+    color: variables.$textclear;
 }
 
 p {
@@ -45,7 +51,15 @@ p {
     font-family:"playfair", serif ;
 }
 
-// Style	Font	Size	Weight
+label{
+    font-family: "DM Sans", sans-serif;
+    color: variables.$textclear;
+}
+.form-select{
+    font-family: "DM Sans", sans-serif;
+    color: variables.$textclear;
+}
+// Style+	Font	Size	Weight
 // H1 Hero	Playfair Display	64	Bold
 // H1	Playfair Display	48	Bold
 // H2	Playfair Display	36	SemiBold

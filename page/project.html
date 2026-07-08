@@ -47,7 +47,8 @@
         </nav>
     </header>
     <main>
-        <h1>Sobre Lunaria</h1>
+        <section class="encabezado-proyecto">
+            <h1>Sobre Lunaria</h1>
         <p># Sobre Lunaria
 
             Lunaria nació como un rincón mágico para quienes creen que las historias tienen el poder de transportarnos a
@@ -67,7 +68,8 @@
             Nuestra misión es construir una comunidad donde la lectura, la creatividad y el amor por los cuentos sigan
             creciendo, una historia a la vez.
         </p>
-        <section>
+        </section>
+        <section >
             <p>
                 ¿Quieres publicar tu cuento?
 
@@ -78,37 +80,94 @@
 
         </section>
 
+        <section class="section-formulario">
+            <form action="" class="formulario">
+
+                <div class="form-input">
+                    <label for="nombre">Nombre</label>
+                    <input type="text"  name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="form-input">
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu email" required>
+                </div>
+
+                
+                <div class="form-input">
+                    <label for="name">Nombre de tu cuento</label>
+                    <input type="text"  name="name" id="name" placeholder="como se llama el cuento" required>
+                </div>
+
+                <div class="form-input">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>¿A que categoria pertenece?</option>
+                        <option value="1">Fantasía</option>
+                        <option value="2">Animales</option>
+                        <option value="3">Universo</option>
+                        <option value="4">Naturaleza</option>
+                    </select>
+                </div>
+
+                <h3>Escribi tu cuento </h3>
+
+                <div class="mb-3 col-md-12 form-input">
+                    <label for="exampleFormControlTextarea1" class="form-label">En este espacio vas a poder escribir tu cuento </label>
+                    <textarea class="form-control form-input" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="boton-form">Enviar</button>
+            </form>
+        </section>
+
     </main>
-    <footer class="global-footer">
+   <footer class="global-footer container py-4">
+        <div class="row">
 
-        <section class="enlases-footer">
-            <h3>Enlases</h3>
-            <ul class="link-footer">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./contac.html">Contactos</a></li>
-                <li><a href="./project.html">Nosotros</a></li>
-                <li><a href="./category.html">Categorias</a></li>
-                <li><a href="./stories.html">Historias </a></li>
-            </ul>
-        </section>
+            <!-- SECCIÓN ENLACES -->
+            <section class="enlases-footer col-12 col-md-4 mb-3 mb-md-0">
 
-        <section class="redes-footer">
-            <h3>Redes</h3>
-            <ul class="iconos-footer">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-            </ul>
-        </section>
-        <section class="logo-footer">
-            <p>© Lunaria Cuentos</p>
-            <img src="../img/Lunaria-Cuentos-1779578333157/logo nab (1).png" alt="" width="60" height="48"></a>
-        </section>
+                <h3 class="d-flex justify-content-start align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEnlaces" role="button" aria-expanded="false">
+                    Enlaces
+                    <span class="d-md-none">▾</span>
+                </h3>
 
+                
+                <div class="collapse d-md-block" id="collapseEnlaces">
+                    <ul class="link-footer list-unstyled mt-2">
+                        <li><a href="../index.html" class="text-decoration-none">Inicio</a></li>
+                        <li><a href="./contac.html" class="text-decoration-none">Contactos</a></li>
+                        <li><a href="./project.html" class="text-decoration-none">Nosotros</a></li>
+                        <li><a href="./category.html" class="text-decoration-none">Categorias</a></li>
+                        <li><a href="./stories.html" class="text-decoration-none">Historias</a></li>
+                    </ul>
+                </div>
+            </section>
 
 
+            <section class="redes-footer col-12 col-md-4 mb-3 mb-md-0">
 
+                <h3>Redes</h3>
+
+                <ul class="iconos-footer ">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook fs-4"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+                    </li>
+                </ul>
+
+            </section>
+
+
+            <section class="logo-footer col-12 col-md-4 text-md-end text-center mt-3 mt-md-0">
+
+                <img src="../img/Lunaria-Cuentos-1779578333157/logo nab (1).png" alt="LOGO DE LUNARIA" width="60"
+                    height="48">
+                <p class="mb-1">© Lunaria Cuentos</p>
+
+            </section>
+
+        </div>
     </footer>
-
 
 
 

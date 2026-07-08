@@ -43,7 +43,14 @@ h1 {
 h2 {
   font-family: "playfair", serif;
   size: 36px;
-  font-weight: 600;
+  font-weight: semibold;
+  color: #374151;
+}
+
+h3 {
+  font-family: "playfair", serif;
+  size: 36px;
+  font-weight: semibold;
   color: #374151;
 }
 
@@ -56,23 +63,14 @@ p {
   font-family: "playfair", serif;
 }
 
-.background-home .navbar .nav-link, .nav-page .nav-enlase {
-  font-family: "Playfair", serif;
+label {
+  font-family: "DM Sans", sans-serif;
   color: #374151;
-  size: 64px;
-  font-weight: bold;
-}
-.background-home .navbar .nav-link:hover, .nav-page .nav-enlase:hover {
-  color: #FFB0D8;
-  text-decoration: underline solid 3px;
-  text-underline-offset: 10px;
 }
 
-.nav-page {
-  background-color: #E8E3FF;
-}
-.nav-page .nav-enlase {
-  background-color: #E8E3FF;
+.form-select {
+  font-family: "DM Sans", sans-serif;
+  color: #374151;
 }
 
 .card-titulo {
@@ -80,7 +78,6 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 2rem;
   gap: 16px;
   margin: 0;
   text-align: center;
@@ -94,7 +91,6 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 2rem;
   gap: 16px;
   margin: 0;
   padding: 4rem 0.5rem 4rem 0.5rem;
@@ -119,13 +115,13 @@ p {
   width: 120px;
   height: auto;
   border-radius: 20px;
-  margin: 0.5rem;
 }
 .card-content .card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 .card-content .card .card-body .card-button {
   display: flex;
@@ -168,6 +164,71 @@ p {
   gap: 10px;
 }
 
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 1rem;
+}
+.formulario .form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+.formulario .form-input input {
+  border: 1px solid #8C7CF8;
+  border-radius: 5px;
+  outline: none;
+}
+.formulario .boton-form {
+  display: flex;
+  padding: 9px;
+  border: none;
+  border-radius: 20px;
+  background-color: #FFB0D8;
+  font-family: "DM Sans", sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+.formulario .boton-form:hover {
+  background-color: #A99DFF;
+}
+.formulario .boton-form {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-input {
+    width: 70%;
+  }
+  .boton-form {
+    width: 25%;
+  }
+}
+.background-home .navbar .nav-link, .nav-page .nav-enlase {
+  font-family: "Playfair", serif;
+  color: #374151;
+  size: 64px;
+  font-weight: bold;
+}
+.background-home .navbar .nav-link:hover, .nav-page .nav-enlase:hover {
+  color: #FFB0D8;
+  text-decoration: underline solid 3px;
+  text-underline-offset: 10px;
+}
+
+.nav-page {
+  background-color: #E8E3FF;
+}
+.nav-page .nav-enlase {
+  background-color: #E8E3FF;
+}
+
 .background-home {
   padding-bottom: 2rem;
   margin-bottom: 0;
@@ -181,7 +242,6 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 2rem;
   gap: 16px;
   width: 100%;
   max-width: 90%;
@@ -209,13 +269,24 @@ p {
   width: 100%;
 }
 
-.conten-category {
+.contato-encabezado {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 2rem;
+  justify-content: start;
+  align-items: start;
   gap: 16px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+  padding: 1rem;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

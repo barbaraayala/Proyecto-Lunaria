@@ -52,12 +52,12 @@
             <p> explora historias para cada aventura y cada sueño.</p>
         </section>
 
-        <section class="conten-category">
+        <section class="card-content">
             <article class="card">
                 <img src="../img/categorias/animales.png" alt="CATEGORIA CUENTOS DE ANIMALES" class="card-img ">
                 <div class="card-body">
                     <h2>Animales</h2>
-                    <button>Ver</button>
+                    <button class="card-button">Ver</button>
                 </div>
             </article>
 
@@ -66,7 +66,7 @@
 
                 <div class="card-body">
                     <h2>Fantacia</h2>
-                    <button>Ver</button>
+                    <button class="card-button">Ver</button>
                 </div>
             </article>
 
@@ -75,7 +75,7 @@
                     class="card-img ">
                 <div class="card-body">
                     <h2>Naturaleza</h2>
-                    <button>Ver</button>
+                    <button class="card-button">Ver</button>
                 </div>
             </article>
 
@@ -83,7 +83,7 @@
                 <img src="../img/categorias/universo.png" alt="CATEGORIA CUENTOS SOBRE EL UNIVERSO" class="card-img ">
                 <div class="card-body">
                     <h2>Universo</h2>
-                    <button>Ver</button>
+                    <button class="card-button">Ver</button>
                 </div>
             </article>
 
@@ -93,38 +93,55 @@
 
     </main>
 
-    <footer class="global-footer">
+        <footer class="global-footer container py-4">
+        <div class="row">
 
-        <section class="enlases-footer">
-            <h3>Enlases</h3>
-            <ul class="link-footer">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./contac.html">Contactos</a></li>
-                <li><a href="./project.html">Nosotros</a></li>
-                <li><a href="./category.html">Categorias</a></li>
-                <li><a href="./stories.html">Historias </a></li>
-            </ul>
-        </section>
+            <!-- SECCIÓN ENLACES -->
+            <section class="enlases-footer col-12 col-md-4 mb-3 mb-md-0">
 
-        <section class="redes-footer">
-            <h3>Redes</h3>
-            <ul class="iconos-footer">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-            </ul>
-        </section>
-        <section class="logo-footer">
-            <p>© Lunaria Cuentos</p>
-            <img src="../img/Lunaria-Cuentos-1779578333157/logo nab (1).png" alt="LOGO DE LUNARIA" width="60"
-                height="48"></a>
-        </section>
+                <h3 class="d-flex justify-content-start align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#collapseEnlaces" role="button" aria-expanded="false">
+                    Enlaces
+                    <span class="d-md-none">▾</span>
+                </h3>
+
+                
+                <div class="collapse d-md-block" id="collapseEnlaces">
+                    <ul class="link-footer list-unstyled mt-2">
+                        <li><a href="../index.html" class="text-decoration-none">Inicio</a></li>
+                        <li><a href="./contac.html" class="text-decoration-none">Contactos</a></li>
+                        <li><a href="./project.html" class="text-decoration-none">Nosotros</a></li>
+                        <li><a href="./category.html" class="text-decoration-none">Categorias</a></li>
+                        <li><a href="./stories.html" class="text-decoration-none">Historias</a></li>
+                    </ul>
+                </div>
+            </section>
+
+         <!-- SECCION REDES -->
+            <section class="redes-footer col-12 col-md-4 mb-3 mb-md-0">
+
+                <h3>Redes</h3>
+
+                <ul class="iconos-footer ">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook fs-4"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+                    </li>
+                </ul>
+
+            </section>
 
 
+            <section class="logo-footer col-12 col-md-4 text-md-end text-center mt-3 mt-md-0">
 
+                <img src="../img/Lunaria-Cuentos-1779578333157/logo nab (1).png" alt="LOGO DE LUNARIA" width="60"
+                    height="48">
+                <p class="mb-1">© Lunaria Cuentos</p>
 
+            </section>
+
+        </div>
     </footer>
-
-
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

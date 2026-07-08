@@ -1,0 +1,38 @@
+@use"../base/tipografia";
+@use"../utilities/mixin";
+@use"../utilities/variables";
+
+.formulario {
+  @include mixin.flex(column, start, center);
+  width: 100%;
+  padding: 1rem;
+
+  .form-input {
+     @include mixin.flex(column, start, center);
+
+  }
+
+  .form-input input {
+    border: 1px solid variables.$colorprimary;
+    border-radius: 5px;
+    outline: none;
+  }
+
+
+  .boton-form {
+    @include mixin.button(variables.$colorsecondary, variables.$hoverbutton);
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+
+
+  .form-input {
+    width: 70%; // El contenedor del input ocupa más espacio
+  }
+
+  .boton-form {
+    width: 25%; // El botón se alinea al lado y se hace más pequeño
+  }
+}

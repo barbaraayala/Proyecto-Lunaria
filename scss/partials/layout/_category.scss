@@ -1,9 +1,8 @@
 @use"../componets/card";
 @use"../utilities/mixin";
+@use"../base/tipografia";
+@use"../utilities/variables";
 
 
 
-.conten-category{
-    @include mixin.flex(column, space-around, center);
-}
 

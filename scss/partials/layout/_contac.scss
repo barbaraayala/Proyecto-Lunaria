@@ -1,0 +1,16 @@
+@use"../base/tipografia";
+@use"../utilities/mixin";
+@use"../utilities/variables";
+
+.contato-encabezado {
+    @include mixin.flex(column, start, start);
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.contacto-info {
+     @include mixin.flex(column, start, start);
+     padding: 1rem;
+    width: 100%;
+}
