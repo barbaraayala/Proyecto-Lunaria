@@ -1,0 +1,18 @@
+@use"../base/tipografia";
+@use"../utilities/mixin";
+@use"../utilities/variables";
+
+.encabezado-proyecto{
+   
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.proyecto-publicar{
+   
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}

@@ -289,4 +289,42 @@ label {
   width: 100%;
 }
 
+.encabezado-proyecto {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.proyecto-publicar {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.section-cuento {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+}
+.section-cuento .acordeon-boton {
+  display: flex;
+  padding: 9px;
+  border: none;
+  border-radius: 20px;
+  background-color: #FFB0D8;
+  font-family: "DM Sans", sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+.section-cuento .acordeon-boton:hover {
+  background-color: #A99DFF;
+}
+.section-cuento .acordeon-boton {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
