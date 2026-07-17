@@ -130,11 +130,13 @@ label {
   .card-content .card {
     width: 45%;
     margin: 0;
+    padding: 0.5rem;
   }
 }
 @media (min-width: 1024px) {
   .card-content .card {
     width: 35%;
+    padding: 0.5rem;
   }
 }
 .card-content .card .card-img {
@@ -142,6 +144,12 @@ label {
   width: 120px;
   height: auto;
   border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .card-content .card .card-img {
+    width: 240px;
+    height: auto;
+  }
 }
 .card-content .card .card-body {
   display: flex;
