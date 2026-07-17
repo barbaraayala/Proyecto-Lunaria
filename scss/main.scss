@@ -9,8 +9,6 @@
 @use"./partials/componets/navBar";
 
 
-
-
 //layout
 @use "./partials/layout/index";
 @use "./partials/layout/category";
@@ -20,4 +18,5 @@
 
 //utilities
 @use"./partials/utilities/variables";
-//@use "./partials/utilities/mixin";
+@use "./partials/utilities/mixin";
+@use"./partials/utilities/extend";
