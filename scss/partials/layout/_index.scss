@@ -22,34 +22,31 @@
 
 .hero {
    
-    // --- ESTILOS PARA CELULAR (BASE) ---
+    
     @include mixin.flex(column, space-around, center);
-    width: 100%; // En celular ocupa todo el ancho disponible
-    max-width: 90%; // Deja un pequeño margen a los lados para que no toque los bordes del teléfono
-    height: auto; // Altura fluida en móviles para que se adapte al contenido de texto
-    padding: 1.5rem; // Un padding un poco más pequeño, ideal para pantallas táctiles
+    width: 100%; 
+    max-width: 90%; 
+    height: auto; 
+    padding: 1.5rem; 
     text-align: center;
     text-shadow: 2px 2px 4px rgba(#ffffff, 1);
     gap: 16px;
-    margin: 0 auto; // Centra el bloque .hero en la pantalla del celular
+    margin: 0 auto; 
+
+    @media (min-width:768px) {
+        width: 50%;
+        margin-left: 0;
+      
+    }
+   
 
     .hero-button {
         @include mixin.button(variables.$colorprimary, variables.$hoverbutton);
-        width: 100%; // [Opcional] En móviles, los botones suelen ser más fáciles de tocar si ocupan todo el ancho
+        width: 100%; 
+
+        @media (min-width: 768px) {
+            align-items: left;
+        }
     }
 }
 
-    // .hero {
-
-    //     @include mixin.flex(column, space-around, center);
-    //     width: 40rem;
-    //     height: 16rem;
-    //     padding: 2rem;
-    //     text-align: center;
-    //     gap: 16px;
-
-    //     .hero-button {
-    //         @include mixin.button(variables.$colorprimary, variables.$hoverbutton)
-    //     }
-
-    // }

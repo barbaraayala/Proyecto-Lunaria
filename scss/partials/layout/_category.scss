@@ -3,6 +3,18 @@
 @use"../base/tipografia";
 @use"../utilities/variables";
 
+.category-titulo {
+    @include mixin.flex(column, space-evenly, center);
+    margin: 0;
+    text-align: center;
+    
+
+    @media (min-width: 1024px) {
+        font-size: 2rem;
+    }
+
+}
+
 
 
 

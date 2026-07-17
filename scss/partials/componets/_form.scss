@@ -7,8 +7,20 @@
   width: 100%;
   padding: 1rem;
 
+  @media (min-width: 768px) {
+    @include mixin.flex(column, space-between, flex-start);
+  }
+
   .form-input {
-     @include mixin.flex(column, start, center);
+    @include mixin.flex(column, start, center);
+
+    @media (min-width: 768px) {
+
+      @include mixin.flex(row, space-between, center);
+      width: 70%;
+      margin-left: 0;
+    }
+
 
   }
 
@@ -16,23 +28,18 @@
     border: 1px solid variables.$colorprimary;
     border-radius: 5px;
     outline: none;
+
+    @media(min-width: 768px) {
+      width: 70%; }
   }
 
 
   .boton-form {
     @include mixin.button(variables.$colorsecondary, variables.$hoverbutton);
     width: 100%;
-  }
-}
 
-@media (min-width: 768px) {
-
-
-  .form-input {
-    width: 70%; // El contenedor del input ocupa más espacio
-  }
-
-  .boton-form {
-    width: 25%; // El botón se alinea al lado y se hace más pequeño
+    @media(min-width: 768px) {
+      width: 25%; 
+    }
   }
 }

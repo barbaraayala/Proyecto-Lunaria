@@ -17,6 +17,13 @@
         @include mixin.button(variables.$colorsecondary, variables.$hoverbutton);
         width: 100%;
     }
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+
+        
+    }
 }
 
 

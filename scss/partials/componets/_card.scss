@@ -10,6 +10,10 @@
     color: variables.$textclear;
     background: linear-gradient(to bottom, variables.$colorsecondary, variables.$backgroundsecondary);
 
+    @media (min-width: 1024px) {
+        font-size: 2rem;
+    }
+
 }
 
 .card-content {
@@ -17,43 +21,55 @@
     margin: 0;
     padding: 4rem 0.5rem 4rem 0.5rem;
 
-    .card {
-        display: flex;
+    @media (min-width: 768px) {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
 
-        width: 100%; 
+
+    .card {
+        @include mixin.flex(column, center, center);
+
+        width: 100%;
         max-width: 90%;
         height: auto;
-        padding: 1.5rem; 
+        padding: 1.5rem;
         text-align: center;
         gap: 16px;
-        margin: 0 auto; 
-        overflow: hidden; 
-
-
-        // width: 40rem;
-        // height: 20rem;
+        margin: 0 auto;
+        overflow: hidden;
         border: 2px solid variables.$colorsecondary;
         border-radius: 20px;
         background-color: variables.$backgroundsecondary;
+
+        @media (min-width: 768px) {
+            width: 45%;
+            margin: 0;
+        }
+
+        @media (min-width: 1024px) {
+            width: 35%;
+        }
 
         .card-img {
             display: block;
             width: 120px;
             height: auto;
             border-radius: 20px;
-            
+
 
         }
 
         .card-body {
-             @include mixin.flex(column, center, center);
+            @include mixin.flex(column, center, center);
 
 
             .card-button {
                 @include mixin.button(variables.$colorsecondary, variables.$hoverbutton);
                 width: 100%;
-            
+
             }
 
 
